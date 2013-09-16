@@ -1,0 +1,329 @@
+<?xml version="1.0"?>
+<metadata>
+  <!-- includes -->
+  <add-node path="/api"><include xml="glib-api.xml" /></add-node>
+  <add-node path="/api"><include xml="gio-sharp-api.xml" /></add-node>
+  <add-node path="/api"><include xml="atk-sharp-api.xml" /></add-node>
+  <add-node path="/api"><include xml="pango-sharp-api.xml" /></add-node>
+  <add-node path="/api"><include xml="gdk-sharp-api.xml" /></add-node>
+  <attr path="/api/namespace" name="library">libgtk-win32-3.0-0.dll</attr>
+
+  <attr path="/api/namespace/callback[@cname='GtkTreeCellDataFunc']/parameters/parameter[@name='data']" name="closure">4</attr>
+  <attr path="/api/namespace/struct[@cname='GtkActionEntry']" name="hidden">1</attr>
+  <attr path="/api/namespace/struct[@cname='GtkRadioActionEntry']" name="hidden">1</attr>
+  <attr path="/api/namespace/struct[@cname='GtkToggleActionEntry']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkActionGroup']/method[@name='AddActionWithAccel']" name="name">Add</attr>
+  <attr path="/api/namespace/object[@cname='GtkActionGroup']/method[@name='ListActions']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkActionGroup']/method[@name='RemoveAction']" name="name">Remove</attr>
+  <attr path="/api/namespace/object[@cname='GtkTreeModelFilter']/method[@name='SetModifyFunc']" name="hidden">1</attr>
+  <attr path="/api/namespace/struct[@cname='GtkAccelKey']/field[@cname='accel_key']" name="name">Key</attr>
+  <attr path="/api/namespace/struct[@cname='GtkAccelKey']/field[@cname='accel_mods']" name="type">GdkModifierType</attr>
+  <attr path="/api/namespace/struct[@cname='GtkAccelKey']/field[@cname='accel_flags']" name="type">GtkAccelFlags</attr>
+  <attr path="/api/namespace/object[@cname='GtkAdjustment']/field[@cname='parent_instance']" name="hidden">true</attr>
+  <attr path="/api/namespace/object[@cname='GtkAdjustment']/constructor[@cname='gtk_adjustment_new']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkTreeViewColumn']/field[@cname='parent_instance']" name="hidden">true</attr>
+  <attr path="/api/namespace/object[@cname='GtkWidget']/field[@cname='parent_instance']" name="hidden">true</attr>
+  <remove-node path="/api/namespace/object[@cname='GtkColorButton']/property[@name='Rgba']" />
+  <remove-node path="/api/namespace/object[@cname='GtkColorButton']/property[@name='UseAlpha']" />
+  <remove-node path="/api/namespace/interface[@cname='GtkAppChooser']/property[@cname='content-type']" />
+  <remove-attr path="/api/namespace/interface[@cname='GtkColorChooser']/virtual_method[@cname='get_rgba']/parameters//parameter" name="pass_as" />
+  <remove-node path="/api/namespace/interface[@cname='GtkActionable']/property[@cname='action-name']" />
+  <remove-node path="/api/namespace/interface[@cname='GtkColorChooser']/property[@cname='rgba']" />
+  <attr path="/api/namespace/interface[@cname='GtkColorChooser']/virtual_method[@cname='add_palette']" name="hidden">true</attr>
+  <attr path="/api/namespace/object[@cname='GtkEntry']/signal[@name='Activate']" name="name">Activated</attr>
+  <attr path="/api/namespace/object[@cname='GtkEntry']/signal[@name='CopyClipboard']" name="name">ClipboardCopied</attr>
+  <attr path="/api/namespace/object[@cname='GtkEntry']/signal[@name='CutClipboard']" name="name">ClipboardCut</attr>
+  <attr path="/api/namespace/object[@cname='GtkEntry']/signal[@name='PasteClipboard']" name="name">ClipboardPasted</attr>
+  <attr path="/api/namespace/object[@cname='GtkHandleBox']/method[@name='GetChildDetached']" name="name">IsChildDetached</attr>
+  <attr path="/api/namespace/object[@cname='GtkPlug']/method[@name='GetEmbedded']" name="name">GetIsEmbedded</attr>
+  <attr path="/api/namespace/object[@cname='GtkScaleButton']/signal[@name='Popup']" name="name">PoppedUp</attr>
+  <attr path="/api/namespace/object[@cname='GtkHScale']/constructor[@cname='gtk_hscale_new_with_range']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkIconView']/method[@name='ScrollToPath']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkIconView']/signal[@name='SelectAll']" name="name">AllSelected</attr>
+  <attr path="/api/namespace/object[@cname='GtkIconView']/signal[@name='UnselectAll']" name="name">AllUnselected</attr>
+  <attr path="/api/namespace/object[@cname='GtkTextBuffer']/method[@name='Insert']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkTextBuffer']/constructor[@cname='gtk_text_buffer_new']/*/*[@type='GtkTextTagTable*']" name="property_name">tag_table</attr>
+  <attr path="/api/namespace/object[@cname='GtkTextBuffer']/method[@name='ApplyTagByName']" name="name">ApplyTag</attr>
+  <attr path="/api/namespace/object[@cname='GtkTextBuffer']/method[@name='DeleteMarkByName']" name="name">DeleteMark</attr>
+  <attr path="/api/namespace/object[@cname='GtkTextBuffer']/method[@name='Deserialize']/*/*[@name='data']" name="array">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkTextBuffer']/method[@name='GetDeserializeFormats']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkTextBuffer']/method[@name='GetInsert']" name="name">GetInsertMark</attr>
+  <attr path="/api/namespace/object[@cname='GtkTextBuffer']/method[@name='GetSerializeFormats']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkTextBuffer']/method[@name='Insert']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkTextBuffer']/method[@name='InsertAtCursor']" name="hidden">1</attr>  
+  <attr path="/api/namespace/object[@cname='GtkTextBuffer']/method[@name='InsertInteractive']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkTextBuffer']/method[@name='InsertInteractiveAtCursor']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkTextBuffer']/method[@name='MoveMarkByName']" name="name">MoveMark</attr>
+  <attr path="/api/namespace/object[@cname='GtkTextBuffer']/method[@name='RemoveTagByName']" name="name">RemoveTag</attr>
+  <attr path="/api/namespace/object[@cname='GtkTextBuffer']/method[@name='Serialize']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkTextBuffer']/method[@name='SetText']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkTextBuffer']/signal[@name='ApplyTag']" name="name">TagApplied</attr>
+  <attr path="/api/namespace/object[@cname='GtkTextBuffer']/signal[@name='BeginUserAction']" name="name">UserActionBegun</attr>
+  <attr path="/api/namespace/object[@cname='GtkTextBuffer']/signal[@name='EndUserAction']" name="name">UserActionEnded</attr>
+  <attr path="/api/namespace/object[@cname='GtkTextBuffer']/signal[@name='InsertChildAnchor']" name="name">ChildAnchorInserted</attr>
+  <attr path="/api/namespace/object[@cname='GtkTextBuffer']/signal[@name='InsertPixbuf']" name="name">PixbufInserted</attr>
+  <attr path="/api/namespace/object[@cname='GtkTextBuffer']/signal[@name='RemoveTag']" name="name">TagRemoved</attr>
+   <attr path="/api/namespace/object[@cname='GtkUIManager']/method[@cname='gtk_ui_manager_get_action_groups']" name="hidden">1</attr>
+   <attr path="/api/namespace/object[@cname='GtkUIManager']/method[@name='GetToplevels']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkTextTag']/property[@name='Weight']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkTextTag']/signal[@name='Event']" name="name">TextEvent</attr>
+  <attr path="/api/namespace/boxed[@cname='GtkTextIter']/method[@name='GetChar']" name="hidden">1</attr>
+  <attr path="/api/namespace/boxed[@cname='GtkTextIter']/method[@name='GetMarks']" name="hidden">1</attr>
+  <attr path="/api/namespace/boxed[@cname='GtkTextIter']/method[@name='GetTags']" name="hidden">1</attr>
+  <attr path="/api/namespace/boxed[@cname='GtkTextIter']/method[@name='GetToggledTags']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkTextChildAnchor']/method[@name='GetWidgets']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkBuilder']/method[@cname='gtk_builder_connect_signals']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkBuilder']/method[@cname='gtk_builder_connect_signals_full']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkBuilder']/method[@name='GetTypeFromName']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkBuilder']/method[@name='ValueFromString']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkBuilder']/method[@name='ValueFromStringType']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkButton']/signal[@name='Activate']" name="name">Activated</attr>
+  <attr path="/api/namespace/object[@cname='GtkButton']/signal[@name='Enter']" name="name">Entered</attr>
+  <attr path="/api/namespace/object[@cname='GtkButton']/signal[@name='Leave']" name="name">Left</attr>
+  <attr path="/api/namespace/object[@cname='GtkContainer']/method[@name='ChildGetProperty']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkContainer']/method[@name='Forall']/*/*[@name='callback']" name="scope">call</attr>
+  <attr path="/api/namespace/object[@cname='GtkContainer']/method[@name='Foreach']/*/*[@name='callback']" name="scope">call</attr>
+  <attr path="/api/namespace/object[@cname='GtkContainer']/method[@name='GetChildren']/return-type" name="element_type">GtkWidget*</attr>
+  <attr path="/api/namespace/object[@cname='GtkContainer']/method[@name='GetChildren']/return-type" name="owned">true</attr>
+  <attr path="/api/namespace/object[@cname='GtkContainer']/method[@name='GetFocusChain']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkContainer']/method[@name='SetFocusChain']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkContainer']/signal[@name='Add']" name="name">Added</attr>
+  <attr path="/api/namespace/object[@cname='GtkContainer']/signal[@name='CheckResize']" name="name">ResizeChecked</attr>
+  <attr path="/api/namespace/object[@cname='GtkContainer']/signal[@name='Remove']" name="name">Removed</attr>
+  <attr path="/api/namespace/object[@cname='GtkContainer']/signal[@name='SetFocusChild']" name="name">FocusChildSet</attr>
+  <attr path="/api/namespace/object[@cname='GtkContainer']/method[@cname='gtk_container_child_type']" name="name">SupportedChildType</attr>
+  <attr path="/api/namespace/object[@cname='GtkContainer']/virtual_method[@cname='forall']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkImageMenuItem']/constructor[@cname='gtk_image_menu_item_new_with_mnemonic']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkImageMenuItem']/constructor[@cname='gtk_image_menu_item_new_with_label']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkImage']/constructor[@cname='gtk_image_new_from_animation']/*/*[@name='animation']" name="property_name">pixbuf_animation</attr>
+  <attr path="/api/namespace/object[@cname='GtkImage']/constructor[@cname='gtk_image_new_from_file']" name="win32_utf8_variant">true</attr>
+  <attr path="/api/namespace/object[@cname='GtkImage']/constructor[@cname='gtk_image_new_from_file']/*/*[@name='filename']" name="property_name">file</attr>
+  <attr path="/api/namespace/object[@cname='GtkImage']/constructor[@cname='gtk_image_new_from_icon_name']" name="shared">true</attr>
+  <attr path="/api/namespace/object[@cname='GtkImage']/constructor[@cname='gtk_image_new_from_icon_set']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkImage']/constructor[@cname='gtk_image_new_from_stock']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkImage']/method[@name='SetFromAnimation']" name="name">SetAnimation</attr>
+  <attr path="/api/namespace/object[@cname='GtkImage']/method[@name='SetFromFile']" name="name">SetFile</attr>
+  <attr path="/api/namespace/object[@cname='GtkImage']/method[@name='SetFromPixbuf']" name="name">SetPixbuf</attr>
+  <attr path="/api/namespace/object[@cname='GtkImage']/method[@cname='gtk_image_get_gicon']" name="name">GetIcon</attr>
+  <attr path="/api/namespace/object[@cname='GtkImage']/method[@cname='gtk_image_set_from_gicon']" name="name">SetFromIcon</attr>
+  <attr path="/api/namespace/object[@cname='GtkImage']/property[@cname='gicon']" name="name">Icon</attr>
+  <attr path="/api/namespace/object[@cname='GtkEntry']/property[@name='Editable']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkMenuItem']/constructor[@cname='gtk_menu_item_new_with_mnemonic']" name="preferred">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkMenuItem']/constructor[@cname='gtk_menu_item_new_with_mnemonic']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkMenuItem']/constructor[@cname='gtk_menu_item_new_with_label']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkMenuItem']/signal[@name='Deselect']" name="name">Deselected</attr>
+  <attr path="/api/namespace/object[@cname='GtkMenuItem']/signal[@name='Select']" name="name">Selected</attr>
+  <attr path="/api/namespace/object[@cname='GtkMenuItem']/signal[@name='ToggleSizeAllocate']" name="name">ToggleSizeAllocated</attr>
+  <attr path="/api/namespace/object[@cname='GtkMenuItem']/signal[@name='ToggleSizeRequest']" name="name">ToggleSizeRequested</attr>
+  <attr path="/api/namespace/object[@cname='GtkMenu']/method[@name='SetScreen']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkMenuShell']/signal[@name='Cancel']" name="name">Canceled</attr>
+  <attr path="/api/namespace/object[@cname='GtkMenuShell']/signal[@name='Deactivate']" name="name">Deactivated</attr>
+  <attr path="/api/namespace/object[@cname='GtkToolPalette']/method[@name='GetVadjustment']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkToolPalette']/method[@name='GetStyle']" name="new_flag">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkToolPalette']/method[@name='SetStyle']" name="new_flag">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkTreeModelFilter']/method[@name='ConvertChildIterToIter']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkTreeModelFilter']/method[@name='SetModifyFunc']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkRadioAction']/method[@name='GetGroup']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkRadioAction']/method[@name='SetGroup']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkRadioAction']/property[@name='Group']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkRadioButton']/constructor[@cname='gtk_radio_button_new']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkRadioButton']/constructor[@cname='gtk_radio_button_new_with_label_from_widget']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkRadioButton']/constructor[@cname='gtk_radio_button_new_with_label']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkRadioButton']/constructor[@cname='gtk_radio_button_new_with_mnemonic']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkRadioButton']/constructor[@cname='gtk_radio_button_new_from_widget']/*/*[@name='radio_group_member']" name="property_name">group</attr>
+  <attr path="/api/namespace/object[@cname='GtkRadioButton']/constructor[@cname='gtk_radio_button_new_with_mnemonic_from_widget']/*/*[@name='radio_group_member']" name="property_name">group</attr>
+  <attr path="/api/namespace/object[@cname='GtkRadioButton']/method[@name='GetGroup']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkRadioButton']/method[@name='SetGroup']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkRadioButton']/property[@name='Group']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkRadioMenuItem']/constructor[@cname='gtk_radio_menu_item_new']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkRadioMenuItem']/constructor[@cname='gtk_radio_menu_item_new_with_label']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkRadioMenuItem']/constructor[@cname='gtk_radio_menu_item_new_with_mnemonic']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkRadioMenuItem']/constructor[@cname='gtk_radio_menu_item_new_with_label_from_widget']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkRadioMenuItem']/method[@name='GetGroup']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkRadioMenuItem']/method[@name='SetGroup']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkRadioMenuItem']/property[@name='Group']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkRadioToolButton']/constructor[@cname='gtk_radio_tool_button_new']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkRadioToolButton']/constructor[@cname='gtk_radio_tool_button_new_from_stock']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkRadioToolButton']/method[@name='GetGroup']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkRadioToolButton']/method[@name='SetGroup']" name="hidden">1</attr>
+  <attr path="/api/namespace/boxed[@cname='GtkTreePath']" name="opaque">1</attr>
+  <attr path="/api/namespace/boxed[@cname='GtkIconSet']" name="opaque">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkRadioToolButton']/property[@name='Group']" name="hidden">1</attr>
+  <attr path="/api/namespace/interface[@cname='GtkTreeModel']/method[@name='GetValue']" name="hidden">1</attr>
+  <attr path="/api/namespace/interface[@cname='GtkTreeModel']/signal[@name='RowsReordered']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkTreeStore']/constructor[@cname='gtk_tree_store_newv']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkTreeStore']/method[@name='Append']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkTreeStore']/method[@name='InsertAfter']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkTreeStore']/method[@name='InsertBefore']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkTreeStore']/method[@name='InsertWithValuesv']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkTreeStore']/method[@name='Insert']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkTreeStore']/method[@name='Prepend']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkTreeStore']/method[@name='SetValuesv']" name="hidden">1</attr>
+  <attr path="/api/namespace/interface[@cname='GtkBuildable']" name="hidden">1</attr> 
+  <attr path="/api/namespace/object/implements/interface[@cname='GtkBuildable']" name="hidden">1</attr>
+  <remove-attr path="/api/namespace//interface//method[@name='SetSortFunc']/parameters//parameter" name="allow-none" />
+  <remove-attr path="/api/namespace//*//method[@name='SetCellDataFunc']/parameters//parameter" name="allow-none" />
+  <remove-attr path="/api/namespace/object[@cname='GtkTreeStore']//method[@name='Append' or @name='Insert' or @name='InsertAfter' or @name='InsertBefore' or @name='InsertWithValuesv' or @name='Prepend']/parameters//parameter" name="allow-none" />
+  <remove-attr path="/api/namespace/object[@cname='GtkListStore']//method[@name='InsertAfter' or @name='InsertBefore']/parameters//parameter" name="allow-none" />
+  <attr path="/api/namespace/object[@cname='GtkVScale']/constructor[@cname='gtk_vscale_new_with_range']" name="hidden">1</attr>
+  <attr path="/api/namespace/*[@cname='GtkTargetList']/constructor[@cname='gtk_target_list_new']" name="hidden">1</attr>
+  <attr path="/api/namespace/*[@cname='GtkTargetList']/method[@name='AddTable']/*/*[@name='targets']" name="array">1</attr>
+  <attr path="/api/namespace/*[@cname='GtkTargetList']/method[@name='AddTable']/*/*[@name='ntargets']" name="name">n_targets</attr>
+  <attr path="/api/namespace/object[@cname='GtkListStore']/constructor[@cname='gtk_list_store_newv']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkListStore']/method[@name='InsertWithValuesv']" name="deprecated">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkListStore']/method[@name='SetValuesv']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkPlug']/constructor[@cname='gtk_plug_new']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkPlug']/constructor[@cname='gtk_plug_new_for_display']" name="hidden">1</attr>
+  <add-node path="/api/namespace/object[@cname='GtkWidget']"><custom-attribute>[GLib.TypeInitializer (typeof (Gtk.Widget), "ClassInit")]</custom-attribute></add-node>
+  <attr path="/api/namespace/interface[@cname='GtkCellEditable']/signal[@name='RemoveWidget']" name="name">WidgetRemoved</attr>
+  <attr path="/api/namespace/interface[@cname='GtkCellEditable']/property[@cname='editing-canceled']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkCellRenderer']/field[@cname='parent_instance']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkCellRenderer']/method[@name='StartEditing']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkCellRenderer']/method[@name='GetSize']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkCellRenderer']/property[@name='CellBackgroundRgba']" name="type">GdkRGBA</attr>
+  <attr path="/api/namespace/object[@cname='GtkCellRenderer']/virtual_method[@cname='get_size']/*/*[@name='cell_area']" name="pass_as">ref</attr>
+  <attr path="/api/namespace/object[@cname='GtkCellRenderer']/virtual_method[@cname='get_size']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkCheckMenuItem']/constructor[@cname='gtk_check_menu_item_new_with_mnemonic']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkCheckMenuItem']/constructor[@cname='gtk_check_menu_item_new_with_label']" name="hidden">1</attr>
+  <remove-node path="/api/namespace//interface[@cname='GtkRecentChooser']//property" />
+  <attr path="/api/namespace/object[@cname='GtkRecentChooserMenu']/method[@name='GetShowNumbers']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkRecentChooserMenu']/method[@name='SetShowNumbers']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkRecentChooserMenu']/property[@name='ShowNumbers']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkRecentManager']/method[@cname='gtk_recent_manager_get_items']" name="name">GetRecentItems</attr>
+  <attr path="/api/namespace/object[@cname='GtkStatusIcon']/method[@name='GetGeometry']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkStatusIcon']/method[@name='SetFromStock']" name="name">SetStock</attr>
+  <attr path="/api/namespace/object[@cname='GtkStatusIcon']/method[@name='SetFromPixbuf']" name="name">SetPixbuf</attr>
+  <attr path="/api/namespace/object[@cname='GtkStatusIcon']/method[@name='SetFromIconName']" name="name">SetIconName</attr>
+  <attr path="/api/namespace/object[@cname='GtkStatusIcon']/method[@name='SetFromFile']" name="name">SetFile</attr>
+  <attr path="/api/namespace/object[@cname='GtkStatusIcon']/method[@name='SetFromGicon']" name="name">SetIcon</attr>
+  <attr path="/api/namespace/object[@cname='GtkStatusIcon']/method[@name='GetGicon']" name="name">GetIcon</attr>
+  <attr path="/api/namespace/object[@cname='GtkStatusIcon']/property[@cname='gicon']" name="name">Icon</attr>
+  <attr path="/api/namespace/interface[@cname='GtkActionable']/property[@cname='action-target']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkClipboard']/method[@name='WaitForRichText']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkClipboard']/method[@name='RequestRichText']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkClipboard']/method[@name='WaitForTargets']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkClipboard']/signal" name="block_glue">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkColorSelection']/method[@name='GetPreviousColor']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkColorSelection']/method[@name='PaletteFromString']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkColorSelection']/method[@name='PaletteToString']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkColorSelection']/method[@name='SetPreviousColor']" name="hidden">1</attr>
+  <attr path="/api/namespace/boxed[@cname='GtkSelectionData']" name="opaque">1</attr>
+  <attr path="/api/namespace/boxed[@cname='GtkSelectionData']/method[@name='Free']" name="deprecated">1</attr>
+  <attr path="/api/namespace/boxed[@cname='GtkSelectionData']/method[@name='GetTargets']" name="hidden">1</attr>
+  <attr path="/api/namespace/boxed[@cname='GtkSelectionData']/method[@name='GetText']" name="hidden">1</attr>
+  <attr path="/api/namespace/boxed[@cname='GtkSelectionData']/method[@name='SetText']" name="hidden">1</attr>
+  <attr path="/api/namespace/boxed[@cname='GtkWidgetPath']" name="opaque">true</attr>
+  <attr path="/api/namespace/object[@cname='GtkIconInfo']/method[@cname='gtk_icon_info_get_attach_points']" name="hidden">1</attr>
+  <attr path="/api/namespace/boxed[@cname='GtkIconSet']/method[@name='GetSizes']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkGlobal']/method[@cname='gtk_init']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkGlobal']/method[@cname='gtk_init_check']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkGlobal']/method[@cname='gtk_main']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkGlobal']/method[@cname='gtk_events_pending']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkGlobal']/method[@cname='gtk_main_iteration']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkGlobal']/method[@cname='gtk_main_iteration_do']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkGlobal']/method[@cname='gtk_main_quit']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkGlobal']/method[@cname='gtk_get_current_event']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkGlobal']/method[@cname='gtk_test_init']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkIconTheme']/method[@name='GetIconSizes']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkIconTheme']/method[@name='GetSearchPath']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkIconTheme']/method[@name='ListIcons']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkIconTheme']/method[@cname='gtk_icon_theme_lookup_by_gicon']" name="name">LookupIcon</attr>
+  <attr path="/api/namespace/object[@cname='GtkIconTheme']/method[@name='SetSearchPath']" name="hidden">1</attr>
+  <remove-attr path="/api/namespace/object[@cname='GtkGlobal']/method[@cname='gtk_parse_args']/parameters//parameter" name="pass_as" />
+  <attr path="/api/namespace/object[@cname='GtkAction']/signal[@name='Activate']" name="name">Activated</attr>
+  <attr path="/api/namespace/object[@cname='GtkAction']/method[@name='GetAccelClosure']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkAction']/method[@name='GetProxies']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkWidget']/method[@name='Destroyed']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkWidget']/method[@name='GetEvents']/return-type" name="type">GdkEventMask</attr>
+  <attr path="/api/namespace/object[@cname='GtkWidget']/method[@name='GetMapped']" name="name">GetIsMapped</attr>
+  <attr path="/api/namespace/object[@cname='GtkWidget']/method[@name='GetPath']" name="name">GetWidgetPath</attr>
+  <attr path="/api/namespace/object[@cname='GtkWidget']/method[@name='GetRealized']" name="name">GetIsRealized</attr>
+  <attr path="/api/namespace/object[@cname='GtkWidget']/method[@name='HasDefault']" name="name">GetHasDefault</attr>
+  <attr path="/api/namespace/object[@cname='GtkWidget']/method[@name='HasFocus']" name="name">GetHasFocus</attr>
+  <attr path="/api/namespace/object[@cname='GtkWidget']/method[@name='IsFocus']" name="name">GetIsFocus</attr>
+  <attr path="/api/namespace/object[@cname='GtkWidget']/method[@name='ListAccelClosures']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkWidget']/method[@name='ListMnemonicLabels']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkWidget']/method[@name='SetEvents']/*/*[@type='gint']" name="type">GdkEventMask</attr>
+  <attr path="/api/namespace/object[@cname='GtkWidget']/method[@name='SetMapped']" name="name">SetIsMapped</attr>
+  <attr path="/api/namespace/object[@cname='GtkWidget']/method[@name='SetRealized']" name="name">SetIsRealized</attr>
+  <attr path="/api/namespace/object[@cname='GtkWidget']/method[@name='SetState']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkWidget']/method[@name='StyleGetProperty']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkWidget']/method[@name='ModifyBase']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkWidget']/method[@name='ModifyBg']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkWidget']/method[@name='ModifyFg']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkWidget']/method[@name='ModifyText']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkWidget']/signal[@name='CanActivateAccel']" name="name">AccelCanActivate</attr>
+  <attr path="/api/namespace/object[@cname='GtkWidget']/signal[@name='ChildNotify']" name="name">ChildNotified</attr>
+  <attr path="/api/namespace/object[@cname='GtkWidget']/signal[@name='Destroy']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkWidget']/signal[@name='Draw']" name="name">Drawn</attr>
+  <attr path="/api/namespace/object[@cname='GtkWidget']/signal[@cname='draw']" name="manual">true</attr>
+  <attr path="/api/namespace/object[@cname='GtkWidget']/signal[@name='Event']" name="name">WidgetEvent</attr>
+  <attr path="/api/namespace/object[@cname='GtkWidget']/signal[@name='EventAfter']" name="name">WidgetEventAfter</attr>
+  <attr path="/api/namespace/object[@cname='GtkWidget']/signal[@name='Focus']" name="name">Focused</attr>
+  <attr path="/api/namespace/object[@cname='GtkWidget']/signal[@name='GrabFocus']" name="name">FocusGrabbed</attr>
+  <attr path="/api/namespace/object[@cname='GtkWidget']/signal[@name='Hide']" name="name">Hidden</attr>
+  <attr path="/api/namespace/object[@cname='GtkWidget']/signal[@name='KeynavFailed']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkWidget']/signal[@name='Map']" name="name">Mapped</attr>
+  <attr path="/api/namespace/object[@cname='GtkWidget']/signal[@name='MnemonicActivate']" name="name">MnemonicActivated</attr>
+  <attr path="/api/namespace/object[@cname='GtkWidget']/signal[@name='Realize']" name="name">Realized</attr>
+  <attr path="/api/namespace/object[@cname='GtkWidget']/signal[@name='ShowHelp']" name="name">HelpShown</attr>
+  <attr path="/api/namespace/object[@cname='GtkWidget']/signal[@name='Show']" name="name">Shown</attr>
+  <attr path="/api/namespace/object[@cname='GtkWidget']/signal[@name='SizeAllocate']" name="name">SizeAllocated</attr>
+  <attr path="/api/namespace/callback[@cname='GtkClipboardClearFunc']/parameters/parameter[@name='user_data_or_owner']" name="closure">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkWidget']/signal[@name='Unmap']" name="name">Unmapped</attr>
+  <attr path="/api/namespace/object[@cname='GtkWidget']/signal[@name='Unrealize']" name="name">Unrealized</attr>
+  <attr path="/api/namespace/object[@cname='GtkWindow']/method[@name='GetDefaultIconList']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkWindow']/method[@name='GetIconList']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkWindow']/method[@name='HasToplevelFocus']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkWindow']/method[@name='IsActive']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkWindow']/method[@name='SetDefaultIconList']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkWindow']/method[@name='SetIconList']" name="hidden">1</attr>
+  <attr path="/api/namespace/object[@cname='GtkWindow']/signal[@name='ActivateDefault']" name="name">DefaultActivated</attr>
+  <attr path="/api/namespace/object[@cname='GtkWindow']/signal[@name='ActivateFocus']" name="name">FocusActivated</attr>
+  <remove-node path="/api/namespace/object[@cname='GtkCellArea']/implements/interface[@cname='GtkCellLayout']" />
+  <add-node path="/api/namespace/object[@cname='GtkContainer']">
+      <method name="Add" cname="gtk_container_add">
+        <return-type type="void" />
+        <parameters>
+          <parameter type="GtkWidget*" name="widget" />
+        </parameters>
+      </method>
+  </add-node>
+  <add-node path="/api/namespace/interface[@cname='GtkTreeModel']">
+      <method name="EmitRowChanged" cname="gtk_tree_model_row_changed">
+        <return-type type="void" />
+        <parameters>
+          <parameter type="GtkTreePath*" name="path" />
+          <parameter type="GtkTreeIter*" name="iter" />
+        </parameters>
+      </method>
+      <method name="EmitRowDeleted" cname="gtk_tree_model_row_deleted">
+        <return-type type="void" />
+        <parameters>
+          <parameter type="GtkTreePath*" name="path" />
+        </parameters>
+      </method>
+      <method name="EmitRowHasChildToggled" cname="gtk_tree_model_row_has_child_toggled">
+        <return-type type="void" />
+        <parameters>
+          <parameter type="GtkTreePath*" name="path" />
+          <parameter type="GtkTreeIter*" name="iter" />
+        </parameters>
+      </method>
+      <method name="EmitRowInserted" cname="gtk_tree_model_row_inserted">
+        <return-type type="void" />
+        <parameters>
+          <parameter type="GtkTreePath*" name="path" />
+          <parameter type="GtkTreeIter*" name="iter" />
+        </parameters>
+      </method>
+      <method name="EmitRowsReordered" cname="gtk_tree_model_rows_reordered">
+        <return-type type="void" />
+        <parameters>
+          <parameter type="GtkTreePath*" name="path" />
+          <parameter type="GtkTreeIter*" name="iter" />
+          <parameter type="gint*" name="new_order" array="1" />
+        </parameters>
+      </method>
+</add-node>
+</metadata>

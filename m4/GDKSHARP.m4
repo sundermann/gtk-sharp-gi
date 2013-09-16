@@ -1,0 +1,5 @@
+AC_DEFUN([CHECK_GDKSHARP],
+[
+        PKG_CHECK_MODULES(GDKSHARP, gdk-sharp-3.0)
+        AC_SUBST(GDK_LIBS)
+])

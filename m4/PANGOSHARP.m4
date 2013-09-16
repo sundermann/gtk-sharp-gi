@@ -1,0 +1,5 @@
+AC_DEFUN([CHECK_PANGOSHARP],
+[
+        PKG_CHECK_MODULES(PANGOSHARP, pango-sharp-1.0)
+        AC_SUBST(PANGO_LIBS)
+])
